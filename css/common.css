@@ -1,0 +1,240 @@
+html,
+body,
+header,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+    margin: 0;
+    padding: 0;
+    font-family: "Roxborough CF"
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: #fff;
+    /*#dcdcdc*/
+    
+
+}
+
+
+.Xdrag {
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+
+.rotate90 {
+    transform: rotate(90deg) translateY(-75%);
+    font-size: 3em;
+    transform-origin: left;
+    font-weight: normal;
+}
+
+/*header*/
+
+header {
+    border-right: 4px solid #a0a0a0;
+    width: 5%;
+    height: 100vh;
+    float: left;
+    position: fixed;
+    z-index: 99;
+}
+
+header .logo {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+header .logo img {
+    width: 100%;
+}
+
+/* section-pages*/
+main {
+    height: 100vh;
+    width: 94.99%;
+    float: right;
+    position: relative;
+}
+
+section {
+    border-left: 4px solid #a0a0a0;
+    height: 100vh;
+    width: 100%;
+    float: right;
+    position: absolute;
+    transition: .6s;
+}
+
+/*main*/
+#index {
+    z-index: 95;
+    padding-left: 17px;
+}
+#index:after{
+    background-image: url(/img/10_shop1_185232.jpg);
+    background-size: 100%;
+    background-position: -10% 0%;  
+}
+
+#index h1 {
+    padding-top: 1.5%;
+    font-size: 25pt;
+    line-height: 25pt;
+    
+}
+
+#index h1 span {
+    font-size: .75em;
+    font-weight: normal
+}
+
+#index h1 p {
+    font-size: .5em;
+    line-height: 15pt;
+}
+
+#index h2 {
+    font-size: 1700%;
+    line-height: 200pt;
+    letter-spacing: 28pt;
+    font-weight: normal;
+}
+
+#index h2 span {
+    color: #c1282e;
+}
+
+#index .Underline {
+    color: #4d4d4d;
+    position: absolute;
+    right: 17.8%;
+    bottom: 30px;
+    text-align: right;
+}
+
+#index .Underline img {
+    padding-left: 20px;
+
+}
+
+
+
+/*shop*/
+
+#Shop {
+    background: #fff;
+    z-index: 96;
+    Transform: translateX(84.375%);
+}
+
+#Shop.active {
+    Transform: translateX(0%);
+    transition: .6s;
+}
+
+#Shop nav {
+    height: 87%;
+    width: 12.5%;
+    text-align: right;
+    float: left;
+    border-right: 3px solid #808080;
+    position: fixed;
+}
+
+#Shop nav ul {
+    margin-right: 10px;
+    margin-top: 100%;
+    font-size: 1.3em;
+    color: #404040;
+    line-height: 200%;
+}
+
+#Shop nav ul span {
+    width: 30px;
+    height: 30px;
+    background-color: aqua;
+    display: inline-block;
+}
+
+#Shop .Content_box {
+    width: 77%;
+    height: 100vh;
+    margin-left: 12.9%;
+    display: inline-block;
+    text-align: center;
+    transform:translateY(-6%);
+}
+
+#Shop .Content_box ul {
+    display: inline-block;
+
+}
+
+#Shop .Content_box ul .product {
+    display: inline-block;
+    padding: 1% 3%;
+    text-align: right;
+}
+
+#Shop .Content_box ul .product h3,
+p {
+    width: 300px;
+}
+
+#Shop .Content_box ul .product h3 {
+    border-bottom: 3px solid #808080;
+    font-weight: normal;
+}
+
+#Shop .Content_box ul .product p {
+    color: #c1282e
+}
+
+#Shop .Content_box .product .imgD {
+    width: 350px;
+    height: 350px;
+}
+
+/**/
+
+#About {
+    background: #fff;
+    z-index: 97;
+    Transform: translateX(89.583%);
+}
+
+#About.active {
+    Transform: translateX(5.208%);
+    transition: .6s;
+}
+
+/**/
+
+#Contact {
+    background: #fff;
+    z-index: 98;
+    Transform: translateX(94.7916%);
+}
+
+#Contact.active {
+    Transform: translateX(10.4166%);
+    transition: .6s;
+}
